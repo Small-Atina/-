@@ -114,4 +114,11 @@ def getnum(a,b):
     count+=c
     b=b//10
   return count
+  ```
+ ##### 作业帮
+ ##### 1.实现每日温度（一个列表存储每天的温度，结果返回每日温度上升需要的天数）
+ ```
+ 用单调栈实现
+ def solve(temp):
+  res=[]
   
