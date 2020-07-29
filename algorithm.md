@@ -89,3 +89,28 @@
 抽到S的概率1/3
 连抽RRR后必抽S
 问抽n次后，E(S)
+
+
+
+#### 计算两个数相加的进位
+```
+def getnum(a,b):
+  c=0
+  count=0
+  while a and b:
+    if a%10+b%10+c>9:c=1
+    else:c=0
+    count+=c
+    a,b=a//10,b//10
+  while c and a:
+    if a%10+c>9:c=1
+    else: c=0
+    count+=c
+    a=a//10
+  while c and b:
+    if b%10+c>9:c=1
+    else: c=0
+    count+=c
+    b=b//10
+  return count
+  
